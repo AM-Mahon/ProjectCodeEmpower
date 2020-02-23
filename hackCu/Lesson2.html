@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+    background-color:green;
+
+}
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li  {
+    float: left;
+}
+
+li a {
+    display:block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+
+}
+li a:hover {
+    background-color: rgb(14, 57, 201);
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+<ul>
+    <Li><a href="home.html">Home </a> </Li>
+    <Li><a href="GetStarted.html">Get Started </a>      </Li>
+    <Li><a href="Lessons.html">Lessons</a> </Li>
+    <Li><a href="Games.html">Games</a>  </Li>
+    <Li><a href="AboutUs.html" >About Us</a></Li>
+    <Li><a href = "Contact.html">Contact Us</a></Li>
+</ul>
+
+<ol>Lesson 2: variables
+    <li>“This is a variable. A variable is like a box that contains letters and numbers.” </li>
+   <li> “The box has a label this is called a variable name”</li>
+    <li>“You can label a box and fill it with letters and numbers. In programming this is called variable declaration.”</li>
+   <li> “Variables have names, you can think of this as the writing on a box. For example, you may have a box labeled “storage” in your house.”</li>
+    <li>Variables also have contents. You can think of this as the items of the box.</li> 
+    <li>The first part of this lesson will involve variable declaration. It will involve pushing a bottom labeled  “create variable. From there it will instruct them to pick a color. Then it will tell them to label the variable box. Next it asks them to write the contents of the box.</li> 
+    <li>After declaring their first variable the program will tell them to create1 variable that contains a letter, one that contains a number, and one that creates multiple letters</li>
+    <li>As they “declare” variables they will appear in a drag and drop menu</li>
+    <li>Next, it will move onto part two. “Variables can be put in print statements. When this is done by contents of the variables will be printed. </li>
+    <li> “Try printed all the variables you declared” </li>
+   <li> “Try printing this statement “statement here” by putting it in a variable and printing it. </li>
+    <li> “You can always take objects out of a box and put new objects in it. You can do the same with variables. Try changing the value of a variable” </li>
+</ol>
+<br>
+<br>
+<br>    
+<br>
+<br>
+<br>
+<br>
+<br>    
+<br>
+<br>
+
+<p>
+    <button onclick="showCode()">Show JavaScript</button>
+    <button onclick="runCode()">Run JavaScript</button>
+
+<script src="blockly_compressed.js"></script>
+<script src="blocks_compressed.js"></script>
+<script src="javascript_compressed.js"></script>
+
+<script src="msg/js/en.js"></script>
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+<xml id="toolbox" style="display: none">
+  <category name="Variables" colour="330" custom="VARIABLE"></category>
+  <category name="Print"  colour="210">
+    <block type="text"></block>
+    <block type="text_print"></block>
+</xml>
+
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+
+      function showCode() {
+          // Generate JavaScript code and display it.
+          //Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          alert(code);
+        }
+
+        function runCode() {
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          try {
+            eval(code);
+          } catch (e) {
+            alert(e);
+          }
+        }
+// workspace.addChangeListener(myUpdateFunction);
+// document.write(code);
+
+</script>
+
+
+</body>
+
+
+
+</html>

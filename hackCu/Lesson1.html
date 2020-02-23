@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+    background-color:green;
+
+}
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li  {
+    float: left;
+}
+
+li a {
+    display:block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+
+}
+li a:hover {
+    background-color: rgb(14, 57, 201);
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+<ul>
+    <Li><a href="home.html">Home </a> </Li>
+    <Li><a href="GetStarted.html">Get Started </a>      </Li>
+    <Li><a href="Lessons.html">Lessons</a> </Li>
+    <Li><a href="Games.html">Games</a>  </Li>
+    <Li><a href="AboutUs.html" >About Us</a></Li>
+    <Li><a href = "Contact.html">Contact Us</a></Li>
+</ul>
+
+<p>Lesson 1: print statements
+    “everything within the statement gets printed” - Shown as box they can type in
+    “statements get printed in order, starting with the top and going down. Each statement is on its own “line””
+    To pass this lesson need to match statement with an example statement
+    For example: “print hello”. 
+    Print something in multiple statements
+    </p>
+
+
+
+</script>
+<p>
+    <button onclick="showCode()">Show JavaScript</button>
+    <button onclick="runCode()">Run JavaScript</button>
+
+<script src="blockly_compressed.js"></script>
+<script src="blocks_compressed.js"></script>
+<script src="javascript_compressed.js"></script>
+
+<script src="msg/js/en.js"></script>
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+<xml id="toolbox" style="display: none">
+  <block type="text"></block>
+  <block type="text_print"></block>
+</xml>
+
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+
+      function showCode() {
+          // Generate JavaScript code and display it.
+          //Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          alert(code);
+        }
+
+        function runCode() {
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          try {
+            eval(code);
+          } catch (e) {
+            alert(e);
+          }
+        }
+// workspace.addChangeListener(myUpdateFunction);
+// document.write(code);
+
+</script>
+
+
+</body>
+
+
+
+</html>
