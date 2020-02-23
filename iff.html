@@ -1,0 +1,45 @@
+<p>
+    <button onclick="showCode()">Show JavaScript</button>
+    <button onclick="runCode()">Run JavaScript</button>
+
+<script src="blockly_compressed.js"></script>
+<script src="blocks_compressed.js"></script>
+<script src="javascript_compressed.js"></script>
+
+<script src="msg/js/en.js"></script>
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+<xml id="toolbox" style="display: none">
+  <category name="Variables" colour="330" custom="VARIABLE"></category>
+  <category name="Print"  colour="210">
+    <block type="text"></block>
+    <block type="text_print"></block>
+    </category>
+  <category name="Math"  colour="120">
+    <block type="math_number"></block>
+    <block type="math_arithmetic"></block>
+    <block type="logic_compare"></block>
+    </category>
+</xml>
+
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+
+      function showCode() {
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          alert(code);
+        }
+
+        function runCode() {
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          try {
+            eval(code);
+          } catch (e) {
+            alert(e);
+          }
+        }
+
+
+</script>
