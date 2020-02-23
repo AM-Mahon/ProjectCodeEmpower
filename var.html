@@ -1,0 +1,78 @@
+<!-- <script type="text/javascript">
+alert("Hello world");
+
+
+
+function myFunction() {
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.write("Hello " + person + "<br>");
+  }
+}
+myFunction();
+document.write("Basic Print method in JavaScript");
+
+</script> -->
+<p>
+    <button onclick="showCode()">Show JavaScript</button>
+    <button onclick="runCode()">Run JavaScript</button>
+
+<script src="blockly_compressed.js"></script>
+<script src="blocks_compressed.js"></script>
+<script src="javascript_compressed.js"></script>
+
+<script src="msg/js/en.js"></script>
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+<xml id="toolbox" style="display: none">
+  <category name="Variables" colour="330" custom="VARIABLE"></category>
+  <category name="Print"  colour="210">
+    <block type="text"></block>
+    <block type="text_print"></block>
+</xml>
+
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+
+      function showCode() {
+          // Generate JavaScript code and display it.
+          //Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          alert(code);
+        }
+
+        function runCode() {
+          var code = Blockly.JavaScript.workspaceToCode(workspace);
+          try {
+            eval(code);
+          } catch (e) {
+            alert(e);
+          }
+        }
+// workspace.addChangeListener(myUpdateFunction);
+// document.write(code);
+
+</script>
+
+<!-- <script src="blocks_compressed.js"></script>
+
+<script src="msg/js/en.js"></script>
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+<xml id="toolbox" style="display: none">
+  <block type="controls_if"></block>
+  <block type="controls_repeat_ext"></block>
+  <block type="logic_compare"></block>
+  <block type="math_number"></block>
+  <block type="math_arithmetic"></block>
+  <block type="text"></block>
+  <block type="text_print"></block>
+</xml>
+
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+</script> -->
