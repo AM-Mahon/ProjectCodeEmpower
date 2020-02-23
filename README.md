@@ -5,43 +5,43 @@
 - Accessibility
   - Audio clips for reading text
   - https://webaccess.berkeley.edu/resources/tips/web-accessibility
-- Funding Issues 
-  - Community Funding 
+- Funding Issues
+  - Community Funding
   - Philanthropy
 
-## Landing Page:
+## Landing Page
 
-- Should have a quick welcome statement that is catchy and tells you how to use the website 
+- Should have a quick welcome statement that is catchy and tells you how to use the website
 - Logo at the top left corner
 - ProjectCodeEmpower should be at the top of the site before the accross bar menu thingy
 - Menu in the top right corner:
   - Drop down menu with options for the following
-    - Get Started//drop down menu 
-    - Lessons//drop down menu 
+    - Get Started//drop down menu
+    - Lessons//drop down menu
     - Games//drop down menu
     - About Us //drop down menu
-      - Mission Statement 
+      - Mission Statement
       - Who We Are
     - For Parents and Educators//drop down menu, might need to add more data
-    - Support Us 
+    - Support Us
     - Contact Us
     - Licensing and Copyright
 
 ## Introduction to Computer Science
 
 - A short video showing how kids can use CS in the real world
-- We will be interviewing underrepresented minorities in CS at CU to explain why they like CS and have them answer a few quick, fun and easy prompts 
+- We will be interviewing underrepresented minorities in CS at CU to explain why they like CS and have them answer a few quick, fun and easy prompts
 - Prompts for the video:
-  - What is CS? 
-  - “Computers may seem mysterious and ... but they are actually just machines which follow a series of instructions called code. People just like you learn how to tell the computers what to do by writing this “code” in a way the computer can understand. 
-  - Why is CS interesting? 
+  - What is CS?
+  - “Computers may seem mysterious and ... but they are actually just machines which follow a series of instructions called code. People just like you learn how to tell the computers what to do by writing this “code” in a way the computer can understand.
+  - Why is CS interesting?
   - What is really fun about CS?
   - Something along the lines of this...
 
-## Coding Lessons: 
+## Coding Lessons
 
 If they are struggling additional support will be provided  
-There will be a switch between the symbolic code and python. This way they can see it symbolically because it's simpler, but also apply it to real code if they are at the level to do so. 
+There will be a switch between the symbolic code and python. This way they can see it symbolically because it's simpler, but also apply it to real code if they are at the level to do so.
 
 ### Lesson 1: print statements
 
@@ -107,7 +107,7 @@ Now try making two “if” statements, one which is true and one which is false
 “This is a for loop, it has a number 5 at the top meaning the computer will print the statement within it five times.”  
 “Try creating a for loop which runs 10 times”  
 “for loops often have a variable which keeps track of how many times they’ve run so far. This variable often has the label “i”. Try printing the following code to see how it works” - code prints, “This the run i” - starts with 1  
-Now try making a for loop that goes to 100 and prints the variable “i”. 
+Now try making a for loop that goes to 100 and prints the variable “i”.
     ? - User Input ?
 
 ## Games
@@ -125,16 +125,15 @@ Four Corners
   Purpose-Play the game four corners--this might get complicated so nix the idea  
 LeapFrog  
   Purpose-various events happen when you land on a leap pad or not, need to accomodate for random events in this scenario  
-//another idea could be janga//too complicated 
+//another idea could be janga//too complicated
 
 ## About Us
   
 Mission Statement-
 
-Our Vision-To make Computer Science accessible to at-risk elementary school students ages 8-10 by giving them the opportunity to be exposed to Computer Science in their classrooms. 
+Our Vision-To make Computer Science accessible to at-risk elementary school students ages 8-10 by giving them the opportunity to be exposed to Computer Science in their classrooms.
 
-Our Goal- To empower children who use our website to explore Computer Science as a field without barriers of race, class, gender expression, socioeconmic status, caste, creed, religion, political affiliation or lack thereof, sex, gender identity, or sexual orientation. 
-
+Our Goal- To empower children who use our website to explore Computer Science as a field without barriers of race, class, gender expression, socioeconmic status, caste, creed, religion, political affiliation or lack thereof, sex, gender identity, or sexual orientation.
 
 Our Values-
 Education  
@@ -149,18 +148,18 @@ We believe that each grade 3-5 student who accesses our website has the full pot
 Philanthropy  
 We value contributing to a greater good  
 Community
-            
-            
+
 Who We Are  
 How We Started ProjectCodeEmpower:  
 Our People:  
 Webpage Creators:  
-- Peter Loden  
+
+- Peter Loden
 - Ann Marie Mahon  
 - Rebecca Carr  
-- Maigh Kaur Jammu   
-Logo Creators:
+- Maigh Kaur Jammu
 
+Logo Creators:
 
 ## For Parents and Educators
 
@@ -175,4 +174,3 @@ Licensing and Copyright
 
 Give Blockly Attrition  
          https://developers.google.com/blockly/guides/app-integration/attribution
-
